@@ -1,5 +1,6 @@
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a Lecturer in the Computer Science and Engineering department at the Islamic University of Technology (IUT). I am also a part of the NDAG-Lab.
+My research interests lie in the fields of Multimodal Learning, Computer Vision, Natural Language Processing, and Robustness Analysis.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Previously, I received my B.Sc. in Computer Science from IUT. I had a wonderful time as an undergraduate researcher advised by Prof. Jingwen Leng at the NDAG-Lab.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Email: `ishmamtashdeed@iut-dhaka.edu`
