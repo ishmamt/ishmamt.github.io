@@ -24,7 +24,7 @@ To preview an existing `_site` build without Ruby, run `python preview.py` and o
 - Blog: create a dated Markdown file in `_posts/`; use `_drafts/post-template.md` as a starting point. Drafts are not published. Optional `series` and `series_position` fields group related posts
 - Portrait: `assets/img/prof_pic.jpg`
 - Education seals: `assets/img/asu-seal.webp` and `assets/img/iut-shield.png`; institution names and degrees are in `index.html`
-- CV: replace `assets/pdf/cv.pdf`
+- CV: replace `assets/pdf/cv.pdf`; the Home link opens the embedded PDF at `/cv/`, with a download link above it
 - Site colors and layout: `assets/css/site.css`
 
 The blog page shows a playful empty message until a genuine post is added. Posts can use Markdown, Rouge fenced code, footnotes, and MathJax when `math: true` is set in front matter.
