@@ -31,6 +31,7 @@ exclude:
   - PORTFOLIO_LAYOUT_MOCKUP.html
   - IMPLEMENTATION_PLAN.md
   - README.md
+  - preview.py
   - assets/img/prof_pic_color.png
   - Gemfile
   - Gemfile.lock

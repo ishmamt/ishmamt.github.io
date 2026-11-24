@@ -13,6 +13,8 @@ bundle exec jekyll serve
 
 Open `http://localhost:4000`. A production build uses `JEKYLL_ENV=production bundle exec jekyll build`.
 
+To preview an existing `_site` build without Ruby, run `python preview.py` and open `http://localhost:8765`. This preview serves the site's custom 404 page for invalid URLs. Rebuild `_site` after edits.
+
 ## Edit content
 
 - Home introduction: `_includes/content/home.md`

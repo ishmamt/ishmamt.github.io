@@ -60,6 +60,10 @@ h1,h2,h3,p{margin-top:0}
 .page-head h1{font-size:clamp(36px,4.5vw,50px);letter-spacing:-.06em;line-height:1.16;margin:0 0 17px}
 .page-head p{color:var(--muted);max-width:640px;font-size:15px;margin:0}
 .page-head .scholar-link{display:inline-block;margin-top:8px;font-size:13px}
+.error-page{max-width:650px;padding:clamp(90px,16vh,155px) 0}
+.error-page h1{font-size:clamp(54px,9vw,84px);line-height:1.1;letter-spacing:-.06em;color:var(--coral);margin:0 0 17px}
+.error-page p{font-size:18px;line-height:1.6;margin:0 0 27px}
+.error-page a{font-size:14px;font-weight:700}
 .page-head .author-key{margin-top:14px;font-size:12px}
 .education{padding-bottom:38px}
 .education .section-label{margin-bottom:18px}

@@ -2,8 +2,10 @@
 layout: default
 title: Page not found
 permalink: /404.html
+description: This page could not be found.
 ---
-<header class="page-head">
-  <h1>Nothing here (yet)</h1>
-  <p>That link wandered off. Try <a href="{{ '/' | relative_url }}">home</a>, <a href="{{ '/research/' | relative_url }}">research</a>, or <a href="{{ '/blog/' | relative_url }}">my thoughts</a>.</p>
-</header>
+<section class="error-page" aria-labelledby="error-title">
+  <h1 id="error-title">404</h1>
+  <p>Page not found. There is nothing at this address.</p>
+  <a href="{{ '/' | relative_url }}">Back to homepage ↗</a>
+</section>
