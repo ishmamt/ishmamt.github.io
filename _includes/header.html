@@ -1,0 +1,12 @@
+<header class="site-header">
+  <div class="shell header-inner">
+    <a class="brand" href="{{ '/' | relative_url }}" aria-label="Ishmam Tashdeed, home"><span class="cat-mark" aria-hidden="true">&#x130E0;</span>ishmam tashdeed</a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="{{ '/' | relative_url }}"{% if page.section == 'home' %} aria-current="page"{% endif %}>home</a>
+      <a href="{{ '/research/' | relative_url }}"{% if page.section == 'research' %} aria-current="page"{% endif %}>research</a>
+      <a href="{{ '/blog/' | relative_url }}"{% if page.section == 'blog' %} aria-current="page"{% endif %}>my thoughts</a>
+      <a href="{{ '/about/' | relative_url }}"{% if page.section == 'about' %} aria-current="page"{% endif %}>about</a>
+      <button class="theme" type="button" id="theme-toggle" aria-label="Switch color theme" aria-pressed="false" title="Switch color theme">◐</button>
+    </nav>
+  </div>
+</header>
