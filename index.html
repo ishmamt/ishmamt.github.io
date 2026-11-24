@@ -7,7 +7,8 @@ description: Ishmam Tashdeed — lecturer and researcher in multimodal learning,
 <section class="hero">
   <div>
     <h1>Hi, I'm <span>Ishmam</span></h1>
-    <p class="lead">I'm a lecturer in Computer Science and Engineering at the Islamic University of Technology. I study multimodal learning, how reliable these systems are in the wild, and how language models can be made less prone to hallucination.</p>
+    {% capture home_intro %}{% include content/home.md %}{% endcapture %}
+    <div class="lead">{{ home_intro | markdownify }}</div>
     <div class="quick-links" aria-label="Profiles and CV">
       <a href="https://github.com/ishmamt">GitHub</a>
       <a href="https://scholar.google.com/citations?user=kSs1cTgAAAAJ">Scholar</a>

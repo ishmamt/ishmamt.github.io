@@ -1,0 +1,1 @@
+I'm a lecturer in Computer Science and Engineering at the Islamic University of Technology. I study multimodal learning, how reliable these systems are in the wild, and how language models can be made less prone to hallucination.

@@ -1,8 +1,8 @@
-<article class="thought-row" data-search="{{ include.post.title | append: ' ' | append: include.post.description | append: ' ' | append: include.post.tags | downcase | escape }}" data-tags="|{% for tag in include.post.tags %}{{ tag | slugify }}|{% endfor %}">
+<article class="thought-row" data-search="{{ include.post.title | append: ' ' | append: include.post.description | append: ' ' | append: include.post.tags | append: ' ' | append: include.post.content | strip_html | downcase | escape }}" data-tags="|{% for tag in include.post.tags %}{{ tag | slugify }}|{% endfor %}">
   <time class="year" datetime="{{ include.post.date | date: '%Y-%m-%d' }}">{{ include.post.date | date: '%d %b %Y' }}</time>
   <div>
     <h3><a href="{{ include.post.url | relative_url }}">{{ include.post.title | escape }}</a></h3>
     {% if include.post.description %}<p>{{ include.post.description | escape }}</p>{% endif %}
   </div>
-  <span class="tag">{{ include.post.tags | first | escape }}</span>
+  <span class="tag">{{ include.post.series | default: include.post.tags.first | escape }}</span>
 </article>

@@ -17,3 +17,16 @@ E = mc^2
 $$
 
 For code, use fenced blocks with a language label.
+
+```python
+def greet(name):
+    return f"Hello, {name}"
+```
+
+| Item | Note |
+| --- | --- |
+| One | Tables work here. |
+
+Footnotes work too.[^example]
+
+[^example]: Replace this example with a real source or note.

@@ -1,0 +1,12 @@
+- frame: "01"
+  caption: "A photo will live here."
+  image:
+  alt:
+- frame: "02"
+  caption: "And here, once I pick one."
+  image:
+  alt:
+- frame: "03"
+  caption: "Probably something with good light."
+  image:
+  alt:

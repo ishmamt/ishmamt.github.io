@@ -10,9 +10,11 @@ section: blog
       <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%d %B %Y' }}</time>
       {% if page.updated %} · updated <time datetime="{{ page.updated | date: '%Y-%m-%d' }}">{{ page.updated | date: '%d %B %Y' }}</time>{% endif %}
       {% if page.tags.size > 0 %} · {{ page.tags | join: ', ' }}{% endif %}
+      {% if page.series %} · {{ page.series | escape }}{% if page.series_position %} ({{ page.series_position }}){% endif %}{% endif %}
       · {% assign words = content | number_of_words %}{% assign minutes = words | divided_by: 200 | plus: 1 %}{{ minutes }} min read
     </p>
     {% if page.description %}<p class="article-lead">{{ page.description | escape }}</p>{% endif %}
+    {% if page.cover %}<figure><img src="{{ page.cover | relative_url }}" alt="{{ page.cover_alt | escape }}"><figcaption>{{ page.cover_caption | escape }}</figcaption></figure>{% endif %}
   </header>
   {% if page.toc != false %}
     <nav class="toc" id="post-toc" aria-label="On this page"><strong>On this page</strong><ul id="toc-list"></ul></nav>
@@ -22,4 +24,17 @@ section: blog
     {% if page.previous %}<a href="{{ page.previous.url | relative_url }}">← {{ page.previous.title | escape }}</a>{% else %}<span></span>{% endif %}
     {% if page.next %}<a href="{{ page.next.url | relative_url }}">{{ page.next.title | escape }} →</a>{% endif %}
   </nav>
+  {% if page.series %}
+    {% assign series_posts = site.posts | where: 'series', page.series %}
+    {% if series_posts.size > 1 %}
+      <section class="related" aria-labelledby="series-title">
+        <h2 id="series-title">More in {{ page.series | escape }}</h2>
+        <ul>
+          {% for post in series_posts %}
+            {% unless post.url == page.url %}<li><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></li>{% endunless %}
+          {% endfor %}
+        </ul>
+      </section>
+    {% endif %}
+  {% endif %}
 </article>
