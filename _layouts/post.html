@@ -1,0 +1,25 @@
+---
+layout: default
+section: blog
+---
+<article class="article">
+  <a class="back" href="{{ '/blog/' | relative_url }}">← All thoughts</a>
+  <header>
+    <h1>{{ page.title | escape }}</h1>
+    <p class="meta">
+      <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%d %B %Y' }}</time>
+      {% if page.updated %} · updated <time datetime="{{ page.updated | date: '%Y-%m-%d' }}">{{ page.updated | date: '%d %B %Y' }}</time>{% endif %}
+      {% if page.tags.size > 0 %} · {{ page.tags | join: ', ' }}{% endif %}
+      · {% assign words = content | number_of_words %}{% assign minutes = words | divided_by: 200 | plus: 1 %}{{ minutes }} min read
+    </p>
+    {% if page.description %}<p class="article-lead">{{ page.description | escape }}</p>{% endif %}
+  </header>
+  {% if page.toc != false %}
+    <nav class="toc" id="post-toc" aria-label="On this page"><strong>On this page</strong><ul id="toc-list"></ul></nav>
+  {% endif %}
+  <div class="article-body">{{ content }}</div>
+  <nav class="post-nav" aria-label="Other posts">
+    {% if page.previous %}<a href="{{ page.previous.url | relative_url }}">← {{ page.previous.title | escape }}</a>{% else %}<span></span>{% endif %}
+    {% if page.next %}<a href="{{ page.next.url | relative_url }}">{{ page.next.title | escape }} →</a>{% endif %}
+  </nav>
+</article>

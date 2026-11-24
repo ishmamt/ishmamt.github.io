@@ -1,0 +1,33 @@
+---
+layout: default
+title: My Thoughts
+section: blog
+description: Notes on research, code, and whatever else catches Ishmam's attention.
+---
+<header class="page-head">
+  <h1>My Thoughts</h1>
+  <p>Notes on research, code, and whatever else refuses to leave my head.</p>
+</header>
+<div class="search-wrap">
+  <label for="post-search" class="sr-only">Search posts</label>
+  <input id="post-search" type="search" placeholder="Search my thoughts..." autocomplete="off">
+</div>
+{% if site.tags.size > 0 %}
+  <div class="filters" aria-label="Filter posts by topic">
+    <button class="filter" type="button" data-tag="all" aria-pressed="true">all</button>
+    {% assign sorted_tags = site.tags | sort %}
+    {% for tag in sorted_tags %}
+      <button class="filter" type="button" data-tag="{{ tag[0] | slugify }}" aria-pressed="false">{{ tag[0] | escape }}</button>
+    {% endfor %}
+  </div>
+{% endif %}
+<p class="search-status" id="search-status" role="status" aria-live="polite"></p>
+<section class="section" aria-label="Posts">
+  {% if site.posts.size > 0 %}
+    {% for post in site.posts %}{% include thought.html post=post %}{% endfor %}
+    <p class="empty" id="no-results" hidden>No thoughts match that search. Try another word.</p>
+  {% else %}
+    <p class="empty">Cricket sounds... it's empty out here. The first thought will land soon.</p>
+  {% endif %}
+</section>
+<p><a href="{{ '/feed.xml' | relative_url }}">Subscribe via Atom ↗</a></p>

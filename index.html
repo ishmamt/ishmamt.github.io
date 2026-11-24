@@ -1,0 +1,46 @@
+---
+layout: default
+title: Home
+section: home
+description: Ishmam Tashdeed — lecturer and researcher in multimodal learning, model robustness, and language models.
+---
+<section class="hero">
+  <div>
+    <h1>Hi, I'm <span>Ishmam</span></h1>
+    <p class="lead">I'm a lecturer in Computer Science and Engineering at the Islamic University of Technology. I study multimodal learning, how reliable these systems are in the wild, and how language models can be made less prone to hallucination.</p>
+    <div class="quick-links" aria-label="Profiles and CV">
+      <a href="https://github.com/ishmamt">GitHub</a>
+      <a href="https://scholar.google.com/citations?user=kSs1cTgAAAAJ">Scholar</a>
+      <a href="https://bd.linkedin.com/in/ishmam-tashdeed">LinkedIn</a>
+      <a href="{{ '/assets/pdf/cv.pdf' | relative_url }}">CV</a>
+    </div>
+  </div>
+  <div class="portrait-wrap">
+    <div class="portrait"><img src="{{ '/assets/img/prof_pic.jpg' | relative_url }}" alt="Ishmam Tashdeed at his graduation ceremony" width="1000" height="1000"></div>
+    <a class="portrait-email" href="mailto:ishmamtashdeed@iut-dhaka.edu">ishmamtashdeed[at]iut-dhaka[dot]edu</a>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="selected-research">
+  <div class="section-top"><h2 class="section-label" id="selected-research">selected research</h2><a href="{{ '/research/' | relative_url }}">all research ↗</a></div>
+  {% assign publications = site.publications | sort: 'order' %}
+  {% assign selected_count = 0 %}
+  {% for pub in publications %}
+    {% if pub.selected and selected_count < 3 %}
+      {% include publication.html pub=pub %}
+      {% assign selected_count = selected_count | plus: 1 %}
+    {% endif %}
+  {% endfor %}
+  {% if selected_count == 0 %}<p class="empty">The papers are hiding. Try the research page.</p>{% endif %}
+</section>
+
+<section class="section" aria-labelledby="recent-thoughts">
+  <div class="section-top"><h2 class="section-label" id="recent-thoughts">my thoughts</h2><a href="{{ '/blog/' | relative_url }}">all thoughts ↗</a></div>
+  {% if site.posts.size > 0 %}
+    {% for post in site.posts limit:3 %}
+      {% include thought.html post=post %}
+    {% endfor %}
+  {% else %}
+    <p class="empty">Cricket sounds... it's empty out here. Thoughts are brewing.</p>
+  {% endif %}
+</section>

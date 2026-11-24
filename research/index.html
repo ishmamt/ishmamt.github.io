@@ -1,0 +1,20 @@
+---
+layout: default
+title: Research
+section: research
+description: Publications and research work by Ishmam Tashdeed.
+---
+<header class="page-head">
+  <h1>Research</h1>
+  <p>Questions about how models see, summarize, and hold up when the world gets messy.</p>
+  <a class="scholar-link" href="https://scholar.google.com/citations?user=kSs1cTgAAAAJ">Google Scholar has the latest publication list ↗</a>
+</header>
+<section class="section" aria-labelledby="research-work">
+  <h2 class="section-label" id="research-work">research work</h2>
+  {% assign publications = site.publications | sort: 'order' %}
+  {% for pub in publications %}
+    {% include publication.html pub=pub %}
+  {% else %}
+    <p class="empty">The papers are hiding. Check back soon.</p>
+  {% endfor %}
+</section>
