@@ -48,6 +48,7 @@ h1,h2,h3,p{margin-top:0}
 .research-row h3,.thought-row h3,.lead{overflow-wrap:anywhere}
 .research-row p{color:var(--muted);font-size:14px;margin-bottom:9px}
 .research-row .authors{font-size:12px;margin-bottom:8px}
+.research-row .author-note{font-size:11px;color:var(--muted);margin:-3px 0 10px}
 .row-links{display:flex;flex-wrap:wrap;gap:13px}.row-links a{font-size:11px}
 .thought-row{border-bottom:1px solid var(--line);padding:19px 0;display:grid;grid-template-columns:116px minmax(0,1fr) 88px;gap:21px;align-items:start}
 .thought-row[hidden]{display:none}

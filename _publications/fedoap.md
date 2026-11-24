@@ -3,7 +3,8 @@ title: "FedOAP: Cross-Organ Feature Sharing for Rapidly Adaptable Federated Tumo
 order: 2
 year: 2026
 venue_short: ICPR
-authors: "Ishmam Tashdeed, Md. Atiqur Rahman, Sabrina Islam, Md. Azam Hossain"
+authors: "Ishmam Tashdeed*, Md. Atiqur Rahman*, Sabrina Islam, Md. Azam Hossain"
+equal_contribution: true
 paper: https://arxiv.org/abs/2511.18847
 publisher: https://doi.org/10.1007/978-3-032-31930-2_47
 code: https://github.com/ishmamt/Federated-Tumor-Segmentation
