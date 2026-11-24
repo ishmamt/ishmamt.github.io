@@ -3,7 +3,6 @@
   <div>
     <h3>{{ include.pub.title | escape }}</h3>
     <p class="authors">{{ include.pub.authors | escape }}</p>
-    {% if include.pub.equal_contribution %}<p class="author-note">* Equal contribution; these authors share first authorship.</p>{% endif %}
     <div class="pub-summary">{{ include.pub.content | markdownify }}</div>
     <div class="row-links">
       <a href="{{ include.pub.paper }}">paper ↗</a>

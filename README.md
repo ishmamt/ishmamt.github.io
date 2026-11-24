@@ -21,6 +21,7 @@ Open `http://localhost:4000`. A production build uses `JEKYLL_ENV=production bun
 - Publications: one Markdown file per paper in `_publications/`; set `selected: true` to feature it on Home
 - Blog: create a dated Markdown file in `_posts/`; use `_drafts/post-template.md` as a starting point. Drafts are not published. Optional `series` and `series_position` fields group related posts
 - Portrait: `assets/img/prof_pic.jpg`
+- Education seals: `assets/img/asu-seal.webp` and `assets/img/iut-shield.png`; institution names and degrees are in `index.html`
 - CV: replace `assets/pdf/cv.pdf`
 - Site colors and layout: `assets/css/site.css`
 
@@ -30,4 +31,4 @@ The theme's light and dark setting is stored in the reader's browser. Space Mono
 
 ## Deployment
 
-The GitHub Actions workflow builds the site on pushes to `master` or `main` and deploys `_site` to the `gh-pages` branch. This repo is currently changed and committed locally; nothing has been pushed.
+The GitHub Actions workflow builds the site on pushes to `master` or `main` and deploys `_site` to the `gh-pages` branch.

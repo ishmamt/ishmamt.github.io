@@ -22,6 +22,20 @@ description: Ishmam Tashdeed — lecturer and researcher in multimodal learning,
   </div>
 </section>
 
+<section class="section education" aria-labelledby="education-title">
+  <h2 class="section-label" id="education-title">education</h2>
+  <div class="education-grid">
+    <div class="education-item">
+      <img class="education-seal" src="{{ '/assets/img/asu-seal.webp' | relative_url }}" alt="Arizona State University seal" width="1280" height="1280" loading="lazy">
+      <div><h3>Arizona State University</h3><p>PhD</p></div>
+    </div>
+    <div class="education-item">
+      <img class="education-seal" src="{{ '/assets/img/iut-shield.png' | relative_url }}" alt="Islamic University of Technology shield" width="980" height="1605" loading="lazy">
+      <div><h3>Islamic University of Technology</h3><p>Bachelor's degree</p></div>
+    </div>
+  </div>
+</section>
+
 <section class="section" aria-labelledby="selected-research">
   <div class="section-top"><h2 class="section-label" id="selected-research">selected research</h2><a href="{{ '/research/' | relative_url }}">all research ↗</a></div>
   {% assign publications = site.publications | sort: 'order' %}
