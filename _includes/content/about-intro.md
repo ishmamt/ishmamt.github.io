@@ -1,1 +1,0 @@
-This is the less footnoted corner of the site. I like making things, looking closely at ordinary scenes, and finding a song to play far too many times.

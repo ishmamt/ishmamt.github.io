@@ -3,42 +3,43 @@ layout: default
 title: About
 section: about
 permalink: /about/
-description: A little about Ishmam beyond research.
+description: Ishmam Tashdeed's photography, music, and 3D art.
 ---
 <header class="page-head">
   <h1>About</h1>
-  {% capture about_intro %}{% include content/about-intro.md %}{% endcapture %}
-  <div class="about-intro">{{ about_intro | markdownify }}</div>
 </header>
 
-<section class="section" aria-labelledby="photography">
-  <div class="section-top"><h2 class="section-label" id="photography">photography</h2></div>
-  <div class="photo-grid">
-    {% for photo in site.data.photos %}
-      <figure class="photo-card">
-        {% if photo.image %}
-          <img src="{{ photo.image | relative_url }}" alt="{{ photo.alt | escape }}" loading="lazy">
-        {% else %}
-          <div class="photo-placeholder" role="img" aria-label="Placeholder for a future photograph"><span>frame {{ photo.frame }}</span></div>
-        {% endif %}
-        <figcaption>{{ photo.caption | escape }}</figcaption>
-      </figure>
-    {% endfor %}
+<section class="section" aria-labelledby="outside-research">
+  <div class="section-top"><h2 class="section-label" id="outside-research">outside research</h2></div>
+  <div class="about-group">
+    <h3>photography</h3>
+    <div class="photo-grid">
+      {% for photo in site.data.photos %}
+        <figure class="photo-card">
+          {% if photo.image %}
+            <img src="{{ photo.image | relative_url }}" alt="{{ photo.alt | escape }}" loading="lazy">
+          {% else %}
+            <div class="photo-placeholder" role="img" aria-label="Placeholder for a future photograph"><span>frame {{ photo.frame }}</span></div>
+          {% endif %}
+          <figcaption>{{ photo.caption | escape }}</figcaption>
+        </figure>
+      {% endfor %}
+    </div>
   </div>
-</section>
 
-<section class="section" aria-labelledby="on-repeat">
-  <div class="section-top"><h2 class="section-label" id="on-repeat">on repeat</h2></div>
-  <div class="music-card">
-    <div class="record-art" role="img" aria-label="Placeholder for album artwork"></div>
-    <div>{% capture music_copy %}{% include content/about-music.md %}{% endcapture %}{{ music_copy | markdownify }}</div>
+  <div class="about-group">
+    <h3>on repeat</h3>
+    <div class="music-card">
+      <div class="record-art" role="img" aria-label="Placeholder for album artwork"></div>
+      <div>{% capture music_copy %}{% include content/about-music.md %}{% endcapture %}{{ music_copy | markdownify }}</div>
+    </div>
   </div>
-</section>
 
-<section class="section" aria-labelledby="three-d-art">
-  <div class="section-top"><h2 class="section-label" id="three-d-art">3D art</h2></div>
-  <div class="art-card">
-    <div class="art-preview" aria-hidden="true">✦</div>
-    <div>{% capture art_copy %}{% include content/about-art.md %}{% endcapture %}{{ art_copy | markdownify }}</div>
+  <div class="about-group">
+    <h3>3D art</h3>
+    <div class="art-card">
+      <div class="art-preview" aria-hidden="true">✦</div>
+      <div>{% capture art_copy %}{% include content/about-art.md %}{% endcapture %}{{ art_copy | markdownify }}</div>
+    </div>
   </div>
 </section>
