@@ -1,12 +1,15 @@
-- frame: "01"
-  caption: "A photo will live here."
-  image:
-  alt:
-- frame: "02"
-  caption: "And here, once I pick one."
-  image:
-  alt:
-- frame: "03"
-  caption: "Probably something with good light."
-  image:
-  alt:
+- image: /assets/img/photography/sunflower.jpg
+  alt: "A yellow sunflower with trees and buildings behind it"
+  caption: "Sunflower in morning light."
+- image: /assets/img/photography/carved-ceiling.jpg
+  alt: "Detailed geometric carvings on a ceiling above arched windows"
+  caption: "Carved patterns across a ceiling and archway."
+- image: /assets/img/photography/shoreline-sunset.jpg
+  alt: "The sun setting over water beside a rocky shoreline"
+  caption: "Sunset over the water."
+- image: /assets/img/photography/evening-silhouettes.jpg
+  alt: "Buildings and trees silhouetted against an evening sky"
+  caption: "Silhouettes under an evening sky."
+- image: /assets/img/photography/street-mirror.jpg
+  alt: "A convex street mirror reflecting a road under a purple sky"
+  caption: "A street mirror at dusk."

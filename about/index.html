@@ -19,7 +19,7 @@ description: Ishmam Tashdeed's photography, music, and 3D art.
         {% else %}
           <div class="photo-placeholder" role="img" aria-label="Placeholder for a future photograph"><span>frame {{ photo.frame }}</span></div>
         {% endif %}
-        <figcaption>{{ photo.caption | escape }}</figcaption>
+        {% if photo.caption %}<figcaption>{{ photo.caption | escape }}</figcaption>{% endif %}
       </figure>
     {% endfor %}
   </div>
