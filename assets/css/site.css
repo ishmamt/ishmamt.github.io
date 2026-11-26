@@ -40,7 +40,6 @@ h1,h2,h3,p{margin-top:0}
 .section-top{display:flex;align-items:baseline;justify-content:space-between;gap:15px;margin-bottom:13px}
 .section-label{font-size:12px;text-transform:uppercase;letter-spacing:.1em;font-weight:700;color:var(--text)}
 .section-top a{font-size:12px}
-.section-intro{color:var(--muted);max-width:650px;margin:0 0 23px}
 .research-row{padding:20px 0 23px;border-bottom:1px solid var(--line);display:grid;grid-template-columns:116px minmax(0,1fr);gap:21px}
 .research-row:last-child,.thought-row:last-child{border-bottom:0}
 .year{font-size:11px;line-height:1.6;color:var(--coral);padding-top:5px}
