@@ -1,0 +1,6 @@
+# Add songs in the order you want them displayed. Put square cover images in
+# assets/img/music/ and use their site paths here, for example:
+# - title: "Song title"
+#   artist: "Artist name"
+#   cover: /assets/img/music/song-title.webp
+[]
