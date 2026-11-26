@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#edf1f5">
+    <title>CV · Ishmam Tashdeed</title>
+    <meta name="description" content="Curriculum vitae of Ishmam Tashdeed.">
+    <link rel="canonical" href="https://ishmamt.github.io/cv/">
+    <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+    <link rel="preload" href="/assets/fonts/SpaceMono-Regular.ttf" as="font" type="font/ttf" crossorigin>
+    <script>
+      try {
+        const choice = localStorage.getItem('theme');
+        document.documentElement.dataset.theme = choice || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      } catch (_) {
+        document.documentElement.dataset.theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+    </script>
+    <link rel="stylesheet" href="/assets/css/site.css">
+    <link rel="alternate" type="application/atom+xml" title="Ishmam Tashdeed" href="/feed.xml">
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+  <div class="shell header-inner">
+    <a class="brand" href="/" aria-label="Ishmam Tashdeed, home"><span class="cat-mark" aria-hidden="true">&#x130E0;</span>ishmam tashdeed</a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="/">home</a>
+      <a href="/research/">research</a>
+      <a href="/blog/">my thoughts</a>
+      <a href="/about/">about</a>
+      <button class="theme" type="button" id="theme-toggle" aria-label="Switch color theme" aria-pressed="false" title="Switch color theme">◐</button>
+    </nav>
+  </div>
+</header>
+
+    <main id="main" class="shell"><section class="cv-page" aria-labelledby="cv-title">
+  <div class="cv-top">
+    <h1 id="cv-title">CV</h1>
+    <a href="/assets/pdf/cv.pdf" download>Download PDF ↓</a>
+  </div>
+  <iframe class="cv-frame" src="/assets/pdf/cv.pdf" title="Ishmam Tashdeed's CV (PDF)"></iframe>
+  <p class="cv-fallback">If the preview does not appear, <a href="/assets/pdf/cv.pdf">open the PDF directly</a>.</p>
+</section>
+</main>
+    <footer class="footer shell">
+  <span>© Ishmam Tashdeed</span>
+  <button type="button" id="back-to-top">Back to top ↑</button>
+</footer>
+
+    <script src="/assets/js/site.js" defer></script>
+    
+  </body>
+</html>

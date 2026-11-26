@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#edf1f5">
+    <title>My Thoughts · Ishmam Tashdeed</title>
+    <meta name="description" content="Notes on research, code, and whatever else catches Ishmam&#39;s attention.">
+    <link rel="canonical" href="https://ishmamt.github.io/blog/">
+    <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+    <link rel="preload" href="/assets/fonts/SpaceMono-Regular.ttf" as="font" type="font/ttf" crossorigin>
+    <script>
+      try {
+        const choice = localStorage.getItem('theme');
+        document.documentElement.dataset.theme = choice || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      } catch (_) {
+        document.documentElement.dataset.theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+    </script>
+    <link rel="stylesheet" href="/assets/css/site.css">
+    <link rel="alternate" type="application/atom+xml" title="Ishmam Tashdeed" href="/feed.xml">
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+  <div class="shell header-inner">
+    <a class="brand" href="/" aria-label="Ishmam Tashdeed, home"><span class="cat-mark" aria-hidden="true">&#x130E0;</span>ishmam tashdeed</a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="/">home</a>
+      <a href="/research/">research</a>
+      <a href="/blog/" aria-current="page">my thoughts</a>
+      <a href="/about/">about</a>
+      <button class="theme" type="button" id="theme-toggle" aria-label="Switch color theme" aria-pressed="false" title="Switch color theme">◐</button>
+    </nav>
+  </div>
+</header>
+
+    <main id="main" class="shell"><header class="page-head">
+  <h1>My Thoughts</h1>
+  <p>Notes on research, code, and whatever else refuses to leave my head.</p>
+</header>
+<div class="search-wrap">
+  <label for="post-search" class="sr-only">Search posts</label>
+  <input id="post-search" type="search" placeholder="Search my thoughts..." autocomplete="off">
+</div>
+
+<p class="search-status" id="search-status" role="status" aria-live="polite"></p>
+<section class="section" aria-label="Posts">
+  
+    <p class="empty">Cricket sounds... it's empty out here. The first thought will land soon.</p>
+  
+</section>
+<p><a href="/feed.xml">Subscribe via Atom ↗</a></p>
+</main>
+    <footer class="footer shell">
+  <span>© Ishmam Tashdeed</span>
+  <button type="button" id="back-to-top">Back to top ↑</button>
+</footer>
+
+    <script src="/assets/js/site.js" defer></script>
+    
+  </body>
+</html>
