@@ -1,25 +1,25 @@
 - image: /assets/img/photography/sunflower.webp
-  width: 750
-  height: 1000
+  width: 300
+  height: 400
   alt: "A yellow sunflower with trees and buildings behind it"
-  caption: "Sunflower in morning light."
+  caption: "Sunny morning at IUT."
 - image: /assets/img/photography/carved-ceiling.webp
-  width: 750
-  height: 1000
+  width: 300
+  height: 400
   alt: "Detailed geometric carvings on a ceiling above arched windows"
-  caption: "Carved patterns across a ceiling and archway."
+  caption: "Sunder nursery, Delhi."
 - image: /assets/img/photography/shoreline-sunset.webp
-  width: 750
-  height: 1000
+  width: 300
+  height: 400
   alt: "The sun setting over water beside a rocky shoreline"
-  caption: "Sunset over the water."
+  caption: "Goa."
 - image: /assets/img/photography/evening-silhouettes.webp
-  width: 750
-  height: 1000
+  width: 300
+  height: 400
   alt: "Buildings and trees silhouetted against an evening sky"
-  caption: "Silhouettes under an evening sky."
+  caption: "Sunsets and silhouettes."
 - image: /assets/img/photography/street-mirror.webp
-  width: 836
-  height: 1000
-  alt: "A convex street mirror reflecting a road under a purple sky"
+  width: 334
+  height: 400
+  alt: "Delhi metro."
   caption: "A street mirror at dusk."

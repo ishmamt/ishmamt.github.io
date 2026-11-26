@@ -14,11 +14,7 @@ description: Ishmam Tashdeed's photography, music, and 3D art.
   <div class="photo-grid">
     {% for photo in site.data.photos %}
       <figure class="photo-card">
-        {% if photo.image %}
-          <img src="{{ photo.image | relative_url }}" alt="{{ photo.alt | escape }}" width="{{ photo.width }}" height="{{ photo.height }}" loading="lazy" decoding="async">
-        {% else %}
-          <div class="photo-placeholder" role="img" aria-label="Placeholder for a future photograph"><span>frame {{ photo.frame }}</span></div>
-        {% endif %}
+        <img src="{{ photo.image | relative_url }}" alt="{{ photo.alt | escape }}" width="{{ photo.width }}" height="{{ photo.height }}" loading="lazy" decoding="async">
         {% if photo.caption %}<figcaption>{{ photo.caption | escape }}</figcaption>{% endif %}
       </figure>
     {% endfor %}
