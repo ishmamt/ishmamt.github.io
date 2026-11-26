@@ -1,15 +1,25 @@
-- image: /assets/img/photography/sunflower.jpg
+- image: /assets/img/photography/sunflower.webp
+  width: 750
+  height: 1000
   alt: "A yellow sunflower with trees and buildings behind it"
   caption: "Sunflower in morning light."
-- image: /assets/img/photography/carved-ceiling.jpg
+- image: /assets/img/photography/carved-ceiling.webp
+  width: 750
+  height: 1000
   alt: "Detailed geometric carvings on a ceiling above arched windows"
   caption: "Carved patterns across a ceiling and archway."
-- image: /assets/img/photography/shoreline-sunset.jpg
+- image: /assets/img/photography/shoreline-sunset.webp
+  width: 750
+  height: 1000
   alt: "The sun setting over water beside a rocky shoreline"
   caption: "Sunset over the water."
-- image: /assets/img/photography/evening-silhouettes.jpg
+- image: /assets/img/photography/evening-silhouettes.webp
+  width: 750
+  height: 1000
   alt: "Buildings and trees silhouetted against an evening sky"
   caption: "Silhouettes under an evening sky."
-- image: /assets/img/photography/street-mirror.jpg
+- image: /assets/img/photography/street-mirror.webp
+  width: 836
+  height: 1000
   alt: "A convex street mirror reflecting a road under a purple sky"
   caption: "A street mirror at dusk."
