@@ -79,7 +79,7 @@ def slug(song):
 
 def small_webp(data):
     with Image.open(BytesIO(data)) as source:
-        cover = ImageOps.fit(ImageOps.exif_transpose(source).convert("RGB"), (250, 250), Image.Resampling.LANCZOS)
+        cover = ImageOps.fit(ImageOps.exif_transpose(source).convert("RGB"), (200, 200), Image.Resampling.LANCZOS)
         output = BytesIO()
         cover.save(output, format="WEBP", quality=80, method=6)
         return output.getvalue()

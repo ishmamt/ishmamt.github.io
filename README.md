@@ -19,7 +19,7 @@ To preview an existing `_site` build without Ruby, run `python preview.py` and o
 
 - Home introduction: `_includes/content/home.md`
 - About page photographs and captions: `_data/photos.yml`; 3D art text: `_includes/content/about-art.md`
-- Songs: edit `_data/song_list.yml`, then run `python scripts/update_songs.py` before committing or pushing. The script fetches release covers, saves 250-pixel WebP thumbnails in `assets/img/music/`, and regenerates `_data/songs.yml`. It needs Python with `Pillow` and `PyYAML`. If a new track has several possible releases, add its MusicBrainz `release_group` ID to the list to select the right cover. The Warfaze entry uses an archived *Dhun* cover because that release is absent from MusicBrainz.
+- Songs: edit `_data/song_list.yml`, then run `python scripts/update_songs.py` before committing or pushing. The script fetches release covers, saves 200-pixel WebP thumbnails in `assets/img/music/`, and regenerates `_data/songs.yml`. It needs Python with `Pillow` and `PyYAML`. If a new track has several possible releases, add its MusicBrainz `release_group` ID to the list to select the right cover. The Warfaze entry uses an archived *Dhun* cover because that release is absent from MusicBrainz.
 - Page layouts and other copy: `index.html`, `research/index.html`, `blog/index.html`, `about/index.html`
 - Publications: one Markdown file per paper in `_publications/`; set `selected: true` to feature it on Home
 - Blog: create a dated Markdown file in `_posts/`; use `_drafts/post-template.md` as a starting point. Drafts are not published. Optional `series` and `series_position` fields group related posts
