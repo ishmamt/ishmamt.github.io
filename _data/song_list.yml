@@ -1,0 +1,27 @@
+# Edit this list, then run: python scripts/update_songs.py
+# A title and artist are enough for a new song when MusicBrainz has one clear
+# release. Add release_group if the song has several possible releases.
+- title: Norwegian Wood
+  artist: The Beatles
+  album: Rubber Soul
+  release_group: dca03435-8adb-30a5-ba82-5a162267ff38
+- title: Jackie and Wilson
+  artist: Hozier
+  album: Hozier
+  release_group: 06af18b0-1f97-4282-8a4d-af53ae8d9377
+- title: Nikamma
+  artist: Lifafa
+  album: Jaago
+  release_group: f041a022-839a-4e06-a31f-437f4b86a3a8
+- title: Positively 4th Street
+  artist: Bob Dylan
+  album: Bob Dylan's Greatest Hits
+  release_group: 4faf067d-6952-3325-92bf-04a458b86ff8
+- title: Mone Pore
+  artist: Warfaze
+  album: Dhun
+  cover_url: https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiavciWK0_tu11RitqjSZHuEB0WzWMu1qfbqvAqWS7gPg5qOu3ET92ojLXHE8rqSC3tDoJn5ga7t1g8AWBH_VQkdtIFo2CtNcg9fi8m9R2gv-LDtqVi-sKGvEohaHCB6ifgV-tuZud03aGC/s400/dhun.jpg
+- title: New York State of Mind
+  artist: Billy Joel
+  album: Turnstiles
+  release_group: 46a3a9dc-510e-3765-81dd-536ced41819a

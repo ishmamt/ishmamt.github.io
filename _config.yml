@@ -32,6 +32,7 @@ exclude:
   - IMPLEMENTATION_PLAN.md
   - README.md
   - preview.py
+  - scripts
   - assets/img/prof_pic_color.png
   - Gemfile
   - Gemfile.lock

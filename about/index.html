@@ -27,7 +27,7 @@ description: Ishmam Tashdeed's photography, music, and 3D art.
     <ul class="song-grid">
       {% for song in site.data.songs %}
         <li class="song">
-          <img src="{{ song.cover | relative_url }}" alt="Cover art for {{ song.title | escape }}" width="400" height="400" loading="lazy" decoding="async">
+          <img src="{{ song.cover | relative_url }}" alt="Cover art for {{ song.title | escape }}" width="250" height="250" loading="lazy" decoding="async">
           <h3>{{ song.title | escape }}</h3>
           <p>{{ song.artist | escape }}</p>
         </li>
